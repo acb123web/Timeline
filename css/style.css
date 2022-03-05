@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,300;0,700;1,300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'K2D', sans-serif;
+    background: #fff;
+    letter-spacing: 1px;
+}
+.container{
+    max-width:650px;
+    margin:50px auto;
+}
+p{
+    font-weight:300;
+    line-height:1.5;
+    font-size:14px;
+    opacity:.8;
+}
+.timeline{
+    position: relative;
+    padding-left:4rem;
+    margin:0 15px 0 15px;
+    color:#000;
+}
+.primary,.success{
+    right:-311.5px;
+}
+.danger{
+    left:-367px;
+}
+.danger .danger-icon{
+    position:absolute;
+    right:-81px !important;
+    left:none;
+}
+.timeline:before{
+    content:'';
+    position: absolute;
+    left:50%;
+    top:0;
+    width:4px;
+    height:100%;
+    background: #9cdba3;
+    box-shadow:rgba(0,0,0,0.15) 0px 5px 15px 0px;
+}
+.timeline-container{
+    position: relative;
+    margin-bottom: 1rem;
+}
+.timeline-icon{
+    position: absolute;
+    left:-88px;
+    top:4px;
+    width:50px;
+    height:50px;
+    border-radius:10%;
+    text-align: center;
+    font-size:2rem;
+}
+.danger-icon{
+    position: absolute;
+    right:-84px;
+    top:4px;
+    width:50px;
+    height:50px;
+    border-radius:10%;
+    text-align: center;
+    font-size:2rem;
+}
+i{
+    position: absolute;
+    font-size:22px;
+    transform:translate(-50%, -50%);
+    left:51%;
+    top:47%;
+}
+.timeline-body,.timeline-body1{
+    background: #fffffff0;
+    border-radius: 3px;
+    padding:20px 20px 15px;
+    box-shadow:1px 3px 9px rgba(0,0,0,.1);
+}
+.timeline-body:before{
+    content:'';
+    background: inherit;
+    width:20px;
+    height:20px;
+    display:block;
+    position: absolute;
+    left:-10px;
+    transform:rotate(45deg);
+    border-radius:0 0 0 2px;
+    box-shadow:1px 3px 9px rgb(0 0 0/ 10%);
+    z-index:-1;
+}
+.timeline-body1:before{
+    content:'';
+    background: inherit;
+    width:20px;
+    height:20px;
+    display:block;
+    position: absolute;
+    right:-10px;
+    transform:rotate(45deg);
+    border-radius:0 0 0 2px;
+    box-shadow:1px 3px 9px rgb(0 0 0/ 10%);
+    z-index:-1;
+}
+.timeline-title{
+    margin-bottom: 1.4rem;
+}
+.badge{
+    background: #4f537b;
+    padding:10px 16px;
+    border-radius:3px;
+    font-size:12px;
+    font-weight:bold;
+}
+.timeline-subtitle{
+    font-weight:300;
+    font-style: italic;
+    opacity:.4;
+    margin-top:16px;
+    font-size:11px;
+}
+.timeline .primary .badge, .primary .timeline-icon{
+    color:#fff;
+    background: #1d8cf8 !important;
+    box-shadow:rgba(0,0,0,0.15) 0px 5px 15px 0px;
+}
+.timeline .success .badge, .success .timeline-icon{
+    color:#fff;
+    background: #00bf9a !important;
+    box-shadow:rgba(0,0,0,0.15) 0px 5px 15px 0px;
+}
+.timeline .danger .badge, .danger .danger-icon{
+    color:#fff;
+    background: #fc1160 !important;
+    box-shadow:rgba(0,0,0,0.15) 0px 5px 15px 0px;
+}
